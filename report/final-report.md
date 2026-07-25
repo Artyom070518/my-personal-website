@@ -1,41 +1,35 @@
 # 最终报告
 
 ## 项目定位
-
-个人学术/职业网站，基于 al-folio Jekyll 模板构建，展示个人简介、技能、项目经历和联系方式。
+中文单页个人网站，基于自建 HTML/CSS 结构，展示个人简介、技能、项目经历和联系方式。
 
 ## 模板选择
-
-- **模板**: al-folio by alshedivat
-- **版本**: v2.x（Tailwind 样式引擎）
-- **选择理由**: 功能丰富，适合展示学术背景和个人项目
-- **难度**: 较高，但文档完善
+- **首选模板**：al-folio（Jekyll 学术主题）
+- **最终方案**：HTML/CSS 自建单页网站
+- **选择理由**：al-folio 过于复杂，包含大量不需要的功能。自建单页更简洁、可控，易于维护
 
 ## 主要修改
+1. 初始使用 al-folio Jekyll 模板，后迁移为 HTML/CSS 单页
+2. 替换为个人真实内容（照片、姓名、简介、技能、项目）
+3. 创建作业文档体系（PRD、Design、Checklist）
+4. 配置 GitHub Pages 部署
 
-1. **配置修改** (_config.yml): 替换姓名为李馨悦、设置 GitHub Pages URL、语言改为中文
-2. **个人内容** (_pages/about.md): 填写真实简介、教育背景、校园经历
-3. **技能数据** (_data/cv.yml): 列出编程、设计、新媒体、运营、教学等技能
-4. **社交链接** (_data/socials.yml): 配置 GitHub 账号
-5. **项目卡片** (_projects/1_project.md): 添加本作业项目
-6. **文档体系**: 创建 PRD、Design、Checklist、README、最终报告
-7. **清理**: 移除模板示例内容（占位文章、项目、页面等）
+## 技术栈
+- HTML + CSS 原生构建
+- 响应式设计（桌面 + 手机）
+- GitHub Pages 部署
 
 ## AI 参与
-
-全程使用 AI Agent（Codex）辅助完成，包括分析模板结构、编写文档、替换内容、修复目录错误。
-
-## 个人判断
-
-- 选择 al-folio 模板，因其功能完整、视觉专业
-- 保留深色/浅色切换和响应式布局，未额外添加特效
-- 所有内容保证真实，无虚构经历
+全程使用 AI Agent（Codex）辅助完成，包括：
+- 模板分析与迁移
+- 文档编写（PRD、Design、Checklist）
+- 内容替换与页面构建
+- 目录结构修复
+- GitHub Pages 配置与部署
 
 ## Pages 链接
-
 https://Artyom070518.github.io/my-personal-website/
 
-## 问题与后续计划
-
-- 网络原因导致 clone 困难，改用 API 逐个文件下载
-- 后续补充个人照片和专业头像
+## 待完成
+- [ ] 补充 4 张关键截图
+- [ ] TA-Claw 提交
