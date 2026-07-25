@@ -1,0 +1,165 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #333;
+    background: #fafafa;
+    line-height: 1.8;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== 导航栏 ===== */
+.navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    z-index: 100;
+}
+.nav-container {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+}
+.nav-logo {
+    font-size: 1.2rem; font-weight: 700;
+    color: #6366f1; text-decoration: none;
+}
+.nav-menu { list-style: none; display: flex; gap: 24px; }
+.nav-menu a {
+    text-decoration: none; color: #555;
+    font-size: 0.95rem; transition: color 0.2s;
+}
+.nav-menu a:hover { color: #6366f1; }
+.nav-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #555; }
+
+/* ===== Hero ===== */
+.hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding-top: 60px;
+}
+.hero-content {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 40px;
+}
+.hero-text { flex: 1; }
+.hero-text h1 { font-size: 3rem; font-weight: 700; margin-bottom: 8px; }
+.hero-tagline { font-size: 1.1rem; opacity: 0.9; margin-bottom: 12px; }
+.hero-desc { font-size: 1rem; opacity: 0.8; margin-bottom: 24px; line-height: 1.6; }
+.hero-image { flex-shrink: 0; }
+.avatar {
+    width: 220px; height: 220px; border-radius: 50%;
+    object-fit: cover; border: 4px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+.btn {
+    display: inline-block; padding: 12px 28px;
+    background: white; color: #6366f1;
+    text-decoration: none; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+
+/* ===== 通用区块 ===== */
+.section { padding: 80px 0; }
+.section-alt { background: #fff; }
+.section-title {
+    font-size: 1.8rem; font-weight: 700; text-align: center;
+    margin-bottom: 40px; color: #333;
+}
+.section-title::after {
+    content: ''; display: block; width: 40px; height: 3px;
+    background: #6366f1; margin: 10px auto 0; border-radius: 2px;
+}
+
+/* ===== About ===== */
+.about-content { max-width: 720px; margin: 0 auto; }
+.about-content p { margin-bottom: 16px; font-size: 1rem; color: #555; }
+
+/* ===== Skills ===== */
+.skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    background: #fafafa; border-radius: 12px; padding: 28px 20px;
+    text-align: center; transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.skill-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.skill-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: #333; }
+.skill-card p { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== Projects ===== */
+.project-card {
+    background: #fff; border-radius: 12px; padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); max-width: 600px; margin: 0 auto;
+}
+.project-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+}
+.project-header h3 { font-size: 1.2rem; font-weight: 600; }
+.project-badge {
+    font-size: 0.8rem; padding: 3px 10px; border-radius: 20px;
+    background: #fef3c7; color: #92400e;
+}
+.project-desc { font-size: 0.95rem; color: #555; margin-bottom: 16px; }
+.project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.tech-tag {
+    font-size: 0.8rem; padding: 4px 10px; border-radius: 6px;
+    background: #eef2ff; color: #6366f1;
+}
+.btn-sm { padding: 8px 18px; font-size: 0.85rem; }
+
+/* ===== Contact ===== */
+.contact-content { text-align: center; }
+.contact-content p { color: #555; margin-bottom: 20px; }
+.contact-links { display: flex; justify-content: center; gap: 20px; }
+.contact-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 24px; background: #fafafa; border-radius: 10px;
+    text-decoration: none; color: #333; font-size: 0.95rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-item:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.contact-icon { font-size: 1.5rem; }
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center; padding: 24px 0;
+    font-size: 0.85rem; color: #999;
+}
+.footer a { color: #6366f1; text-decoration: none; }
+
+/* ===== 移动端 ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 60px; left: 0; right: 0;
+        background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .nav-menu.active { display: flex; }
+    .nav-menu li { border-top: 1px solid #f0f0f0; }
+    .nav-menu a { display: block; padding: 14px 20px; }
+    .nav-toggle { display: block; }
+
+    .hero-content { flex-direction: column-reverse; text-align: center; padding: 40px 0; }
+    .hero-text h1 { font-size: 2.2rem; }
+    .avatar { width: 160px; height: 160px; }
+
+    .section { padding: 60px 0; }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .skill-card { padding: 20px 14px; }
+
+    .project-card { padding: 24px; }
+    .project-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+@media (max-width: 480px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .contact-links { flex-direction: column; align-items: center; }
+}

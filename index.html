@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李馨悦 · 个人网站</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">李馨悦</a>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" onclick="closeMenu()">首页</a></li>
+                <li><a href="#about" onclick="closeMenu()">关于</a></li>
+                <li><a href="#skills" onclick="closeMenu()">技能</a></li>
+                <li><a href="#projects" onclick="closeMenu()">项目</a></li>
+                <li><a href="#contact" onclick="closeMenu()">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>李馨悦</h1>
+                <p class="hero-tagline">深圳大学 · 大数据专业 · 编程 · 设计 · 运营</p>
+                <p class="hero-desc">用代码和创意解决问题，在每一个角色中全力以赴</p>
+                <a href="#projects" class="btn">查看我的项目</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/img/prof_pic.jpg" alt="李馨悦" class="avatar">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>我是李馨悦，深圳大学金融科技学院大数据专业的学生。</p>
+                <p>我具备多元化的能力组合——既有编程基础（C / C++），也有设计能力（亚克力周边设计、AI 工具运用），还有丰富的运营统筹经验。</p>
+                <p>在校园里，我担任金融科技学院团委心理部成员，负责活动推文撰写、策划案输出和活动落地执行；同时也在深大猫协媒体部 &amp; 行动部参与公益项目运营，独立完成义卖活动的海报、物料和宣传素材设计。</p>
+                <p>我享受将创意落地的过程，也乐于在团队中承担责任、推动项目前进。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>编程开发</h3>
+                    <p>C / C++ 基础<br>数据结构与算法</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>设计创作</h3>
+                    <p>亚克力周边设计<br>AI 绘画工具运用<br>海报与宣传物料设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📝</div>
+                    <h3>新媒体运营</h3>
+                    <p>推文撰写与文案策划<br>排版设计与内容产出</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📋</div>
+                    <h3>项目管理</h3>
+                    <p>活动策划全流程<br>项目分工与节点推进<br>团队协作与执行落地</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📖</div>
+                    <h3>全科家教</h3>
+                    <p>丰富全科家教经验<br>善于沟通与知识传递</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">项目</h2>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>个人网站建设</h3>
+                    <span class="project-badge">进行中</span>
+                </div>
+                <p class="project-desc">按照规范化 AI 开发流程（Vibe → Spec → Harness → GitHub → GitHub Pages → TA-Claw）完成个人网站开发。</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">GitHub Pages</span>
+                    <span class="tech-tag">AI 辅助开发</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Artyom070518/my-personal-website" target="_blank" class="btn btn-sm">GitHub 仓库</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <p>欢迎通过以下方式与我联系</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Artyom070518" target="_blank" class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 李馨悦 · 基于 <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> 模板修改</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+        function closeMenu() {
+            document.getElementById('navMenu').classList.remove('active');
+        }
+        // 点击导航链接后平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
