@@ -6,7 +6,7 @@ subtitle: 深圳大学 · 大数据专业 · 编程 · 设计 · 运营
 
 profile:
   align: right
-  image: avatar.svg
+  image: prof_pic.jpg
   image_circular: true
   more_info: >
     <p><i class=\"fa-solid fa-graduation-cap\"></i> 深圳大学</p>
