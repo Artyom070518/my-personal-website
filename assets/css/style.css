@@ -47,8 +47,8 @@ body {
 }
 .hero-text { flex: 1; }
 .hero-text h1 { font-size: 3rem; font-weight: 700; margin-bottom: 8px; }
-.hero-tagline { font-size: 1.1rem; opacity: 0.9; margin-bottom: 12px; }
-.hero-desc { font-size: 1rem; opacity: 0.8; margin-bottom: 24px; line-height: 1.6; }
+.hero-tagline { font-size: 1.1rem; opacity: 0.9; margin-bottom: 8px; }
+.hero-desc { font-size: 1rem; opacity: 0.8; margin-bottom: 6px; line-height: 1.6; }
 .hero-image { flex-shrink: 0; }
 .avatar {
     width: 220px; height: 220px; border-radius: 50%;
@@ -77,12 +77,29 @@ body {
 }
 
 /* ===== About ===== */
-.about-content { max-width: 720px; margin: 0 auto; }
-.about-content p { margin-bottom: 16px; font-size: 1rem; color: #555; }
+.about-content { max-width: 720px; margin: 0 auto 40px; }
+.about-content p { margin-bottom: 14px; font-size: 1rem; color: #555; }
+
+/* ===== 数据亮点 ===== */
+.about-highlights {
+    display: flex; justify-content: center; gap: 30px;
+    flex-wrap: wrap; max-width: 700px; margin: 0 auto;
+}
+.highlight-item {
+    text-align: center; padding: 20px 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px; color: white; min-width: 120px;
+}
+.highlight-num {
+    display: block; font-size: 1.6rem; font-weight: 700;
+}
+.highlight-label {
+    display: block; font-size: 0.8rem; opacity: 0.85; margin-top: 4px;
+}
 
 /* ===== Skills ===== */
 .skills-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 .skill-card {
@@ -93,6 +110,33 @@ body {
 .skill-icon { font-size: 2.2rem; margin-bottom: 12px; }
 .skill-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: #333; }
 .skill-card p { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== 时间线 ===== */
+.timeline {
+    max-width: 680px; margin: 0 auto; position: relative;
+    padding-left: 30px;
+}
+.timeline::before {
+    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
+    width: 2px; background: #e0e0e0;
+}
+.timeline-item { position: relative; margin-bottom: 36px; }
+.timeline-marker {
+    position: absolute; left: -26px; top: 4px;
+    width: 14px; height: 14px; border-radius: 50%;
+    background: #6366f1; border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #6366f1;
+}
+.timeline-content h3 { font-size: 1.1rem; font-weight: 600; color: #333; }
+.timeline-meta { font-size: 0.85rem; color: #888; margin-bottom: 8px; }
+.timeline-content ul { list-style: none; padding: 0; }
+.timeline-content ul li {
+    font-size: 0.92rem; color: #555; margin-bottom: 4px;
+    padding-left: 16px; position: relative;
+}
+.timeline-content ul li::before {
+    content: '·'; position: absolute; left: 4px; color: #6366f1; font-weight: bold;
+}
 
 /* ===== Projects ===== */
 .project-card {
@@ -156,10 +200,18 @@ body {
     .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .skill-card { padding: 20px 14px; }
 
+    .about-highlights { gap: 14px; }
+    .highlight-item { padding: 14px 18px; min-width: 90px; }
+    .highlight-num { font-size: 1.3rem; }
+
+    .timeline { padding-left: 24px; }
+    .timeline-marker { left: -20px; width: 12px; height: 12px; }
+
     .project-card { padding: 24px; }
     .project-header { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 @media (max-width: 480px) {
     .skills-grid { grid-template-columns: 1fr; }
+    .about-highlights { flex-direction: column; align-items: center; }
     .contact-links { flex-direction: column; align-items: center; }
 }
